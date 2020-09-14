@@ -1,8 +1,8 @@
 # apple-gameplaykit-samples
-[Apple samples on GameplayKit](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172-CH1-SW1) updated to latest Xcode/Swift.
+[Apple samples on GameplayKit](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172-CH1-SW1) updated to the latest Xcode/Swift.
 
 ## Labels
-✅ Updated   
+✅ Updated  
 ⏳ Not yet updated
 
 ## Status
@@ -14,4 +14,9 @@
 ⏳ Dispenser: GameplayKit State Machine Basics  
 ⏳ FourInARow: Using the GameplayKit Minmax Strategist for Opponent AI  
 ⏳ Maze: Getting Started with GameplayKit  
-⏳ Pathfinder: GameplayKit Pathfinding Basics  
+⏳ Pathfinder: GameplayKit Pathfinding Basics
+
+## Extras
+Not exactly from Apple, but also a pretty solid GK sample
+
+✅ MonstersWars: [A Ray Wenderlich tutorial](https://www.raywenderlich.com/706-gameplaykit-tutorial-entity-component-system-agents-goals-and-behaviors)
