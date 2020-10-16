@@ -43,9 +43,8 @@ extension LevelScene {
 
         for node in graph.nodes as! [GKGraphNode2D] {
             for destination in node.connectedNodes as! [GKGraphNode2D] {
-                let points = [CGPoint(node.position), CGPoint(destination.position)]
-
-                let shapeNode = SKShapeNode(points: UnsafeMutablePointer<CGPoint>(mutating: points), count: 2)
+                var points = [CGPoint(node.position), CGPoint(destination.position)]
+                let shapeNode = SKShapeNode(points: &points, count: 2)
                 shapeNode.strokeColor = SKColor(white: 1.0, alpha: 0.1)
                 shapeNode.lineWidth = 2.0
                 shapeNode.zPosition = -1
