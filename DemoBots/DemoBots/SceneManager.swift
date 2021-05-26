@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-protocol SceneManagerDelegate: class {
+protocol SceneManagerDelegate: AnyObject {
     // Called whenever a scene manager has transitioned to a new scene.
     func sceneManager(_ sceneManager: SceneManager, didTransitionTo scene: SKScene)
 }

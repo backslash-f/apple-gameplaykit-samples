@@ -8,7 +8,7 @@
 
 import GameplayKit
 
-protocol RulesComponentDelegate: class {
+protocol RulesComponentDelegate: AnyObject {
     // Called whenever the rules component finishes evaluating its rules.
     func rulesComponent(rulesComponent: RulesComponent, didFinishEvaluatingRuleSystem ruleSystem: GKRuleSystem)
 }

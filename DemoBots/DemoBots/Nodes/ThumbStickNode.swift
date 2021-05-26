@@ -9,7 +9,7 @@
 import SpriteKit
 
 /// Relay control events though `ThumbStickNodeDelegate`.
-protocol ThumbStickNodeDelegate: class {
+protocol ThumbStickNodeDelegate: AnyObject {
     /// Called when `touchPad` is moved. Values are normalized between [-1.0, 1.0].
     func thumbStickNode(thumbStickNode: ThumbStickNode, didUpdateXValue xValue: Float, yValue: Float)
     

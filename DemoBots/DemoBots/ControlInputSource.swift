@@ -26,7 +26,7 @@ enum ControlInputDirection: Int {
 }
 
 /// Delegate methods for responding to control input that applies to the game as a whole.
-protocol ControlInputSourceGameStateDelegate: class {
+protocol ControlInputSourceGameStateDelegate: AnyObject {
     func controlInputSourceDidSelect(_ controlInputSource: ControlInputSourceType)
     func controlInputSource(_ controlInputSource: ControlInputSourceType, didSpecifyDirection: ControlInputDirection)
     func controlInputSourceDidTogglePauseState(_ controlInputSource: ControlInputSourceType)
@@ -40,7 +40,7 @@ protocol ControlInputSourceGameStateDelegate: class {
 }
 
 /// Delegate methods for responding to control input that applies to the `PlayerBot`.
-protocol ControlInputSourceDelegate: class {
+protocol ControlInputSourceDelegate: AnyObject {
     /**
         Update the `ControlInputSourceDelegate` with new displacement
         in a top down 2D coordinate system (x, y):
@@ -82,7 +82,7 @@ protocol ControlInputSourceDelegate: class {
 }
 
 /// A protocol to be adopted by classes that provide control input and notify their delegates when input is available.
-protocol ControlInputSourceType: class {
+protocol ControlInputSourceType: AnyObject {
     /// A delegate that receives information about actions that apply to the `PlayerBot`.
     var delegate: ControlInputSourceDelegate? { get set }
     

@@ -8,7 +8,7 @@
 
 import GameController
 
-protocol GameInputDelegate: class {
+protocol GameInputDelegate: AnyObject {
     // Called whenever a control input source is updated.
     func gameInputDidUpdateControlInputSources(gameInput: GameInput)
 }

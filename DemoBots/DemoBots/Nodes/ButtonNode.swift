@@ -9,7 +9,7 @@
 import SpriteKit
 
 /// A type that can respond to `ButtonNode` button press events.
-@objc protocol ButtonNodeResponderType: class {
+@objc protocol ButtonNodeResponderType: AnyObject {
     /// Responds to a button press.
     @objc func buttonTriggered(button: ButtonNode)
 }

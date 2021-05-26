@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-protocol ChargeComponentDelegate: class {
+protocol ChargeComponentDelegate: AnyObject {
     // Called whenever a `ChargeComponent` loses charge through a call to `loseCharge`
     func chargeComponentDidLoseCharge(chargeComponent: ChargeComponent)
 }
